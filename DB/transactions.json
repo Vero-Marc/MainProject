@@ -1,0 +1,94 @@
+{
+  "uuid": "ea65dc49-0f44-4950-af19-a94d999b7645",
+  "lastMigration": 33,
+  "name": "Transactions",
+  "endpointPrefix": "Transactions",
+  "latency": 0,
+  "port": 3003,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "a46030e0-5517-43a2-a696-2dfcc233fec7",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "GetTransactionList",
+      "responses": [
+        {
+          "uuid": "f8cf58c4-ce1b-44e1-8c20-6bea738ddeb8",
+          "body": "[{\n\t\t\t\"Date\": \"17/12/2024\",\n\t\t\t\"OrderId\": \"969FGBQ6\",\n\t\t\t\"Amount\": \"1000\",\n\t\t\t\"Customer_Name\": \"Customer\",\n\t\t\t\"Auth_Code\": \"87654\",\n\t\t\t\"Transaction_type\": \"UPI\",\n\t\t\t\"UTR\": \"Yes\",\n\t\t\t\"Acc_No\": \"12345678\",\n\t\t\t\"PaymentType\": \"PayOut\"\n\t\t},\n\t\t{\n\t\t\t\"Date\": \"17/12/2024\",\n\t\t\t\"OrderId\": \"969FGBQ6\",\n\t\t\t\"Amount\": \"1000\",\n\t\t\t\"Customer_Name\": \"Customer\",\n\t\t\t\"Auth_Code\": \"87654\",\n\t\t\t\"Transaction_type\": \"UPI\",\n\t\t\t\"UTR\": \"Yes\",\n\t\t\t\"Acc_No\": \"12345678\",\n\t\t\t\"PaymentType\": \"PayIn\"\n\t\t}\n  ]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "a46030e0-5517-43a2-a696-2dfcc233fec7"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
