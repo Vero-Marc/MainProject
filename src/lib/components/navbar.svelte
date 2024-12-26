@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 
 	import {Notification,Settings} from '$lib/assets/icons/index.js';
 

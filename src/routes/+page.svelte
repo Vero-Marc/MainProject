@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import {TotalBalance,SuccessfulTransaction,AmountRefund,ChargebackAmount,Download,Filter,TimePicker,TablePayIn,TablePayout} from '$lib/assets/icons/index.js';
     let {data} = $props()
 	let transactionList = data.transactionList

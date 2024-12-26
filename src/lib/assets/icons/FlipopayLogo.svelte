@@ -1,5 +1,5 @@
 
-<script>
+<script lang="ts">
     export let height = 32
     export let width = 40
 </script>

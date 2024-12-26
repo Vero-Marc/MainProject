@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import {DashboardIcon,Union,Payout,Settlements,Contact,Disbuts,Team,Bank,FlipopayLogo,Arrow} from '$lib/assets/icons/index.js';
 
 	let menuItems = [

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     export let height = 18
     export let width = 18
     export let fill = "url(#paint0_linear_51_63)"

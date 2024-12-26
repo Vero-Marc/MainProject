@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     export let height = 10
     export let width = 14
     export let fill = "#2197D4"
