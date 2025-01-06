@@ -18,7 +18,7 @@
 </script>
 
 <aside
-	class=" flex h-full flex-col gap-[50px] bg-[#2197D4] px-[20px] py-[50px] text-white transition-transform duration-500 ease-in-out {isOpen
+	class=" flex  flex-col gap-[50px] bg-[#2197D4] px-[20px] py-[50px] text-white transition-transform duration-500 ease-in-out {isOpen
 		? ''
 		: 'w-fit max-w-[84px]'}"
 >

@@ -2,22 +2,41 @@
   "uuid": "ea65dc49-0f44-4950-af19-a94d999b7645",
   "lastMigration": 33,
   "name": "Transactions",
-  "endpointPrefix": "Transactions",
+  "endpointPrefix": "Test",
   "latency": 0,
   "port": 3003,
   "hostname": "",
   "folders": [],
   "routes": [
     {
-      "uuid": "a46030e0-5517-43a2-a696-2dfcc233fec7",
-      "type": "http",
+      "uuid": "98aabd8d-8b50-4fc7-b031-13539e819833",
+      "type": "crud",
       "documentation": "",
-      "method": "get",
-      "endpoint": "GetTransactionList",
+      "method": "",
+      "endpoint": "Transactions",
       "responses": [
         {
-          "uuid": "f8cf58c4-ce1b-44e1-8c20-6bea738ddeb8",
-          "body": "[{\n\t\t\t\"Date\": \"17/12/2024\",\n\t\t\t\"OrderId\": \"969FGBQ6\",\n\t\t\t\"Amount\": \"1000\",\n\t\t\t\"Customer_Name\": \"Customer\",\n\t\t\t\"Auth_Code\": \"87654\",\n\t\t\t\"Transaction_type\": \"UPI\",\n\t\t\t\"UTR\": \"Yes\",\n\t\t\t\"Acc_No\": \"12345678\",\n\t\t\t\"PaymentType\": \"PayOut\"\n\t\t},\n\t\t{\n\t\t\t\"Date\": \"17/12/2024\",\n\t\t\t\"OrderId\": \"969FGBQ6\",\n\t\t\t\"Amount\": \"1000\",\n\t\t\t\"Customer_Name\": \"Customer\",\n\t\t\t\"Auth_Code\": \"87654\",\n\t\t\t\"Transaction_type\": \"UPI\",\n\t\t\t\"UTR\": \"Yes\",\n\t\t\t\"Acc_No\": \"12345678\",\n\t\t\t\"PaymentType\": \"PayIn\"\n\t\t}\n  ]",
+          "uuid": "53b84940-47fb-4c6c-933c-2232f8fccd2e",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "DATABUCKET",
+          "filePath": "",
+          "databucketID": "5b82",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "80bc85d3-a68d-41de-b5d0-d892145b84b3",
+          "body": "{}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -30,7 +49,7 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true,
+          "default": false,
           "crudKey": "id",
           "callbacks": []
         }
@@ -43,7 +62,7 @@
   "rootChildren": [
     {
       "type": "route",
-      "uuid": "a46030e0-5517-43a2-a696-2dfcc233fec7"
+      "uuid": "98aabd8d-8b50-4fc7-b031-13539e819833"
     }
   ],
   "proxyMode": false,
@@ -89,6 +108,14 @@
       "value": ""
     }
   ],
-  "data": [],
+  "data": [
+    {
+      "uuid": "7e82d4b7-cce7-4902-9605-71f8fbdb4a3e",
+      "id": "5b82",
+      "name": "TData",
+      "documentation": "",
+      "value": "[{  \"id\": 1,\n\t\t\t\"Date\": \"17/12/2024\",\n\t\t\t\"OrderId\": \"969FGBQ6\",\n\t\t\t\"Amount\": \"1000\",\n\t\t\t\"Customer_Name\": \"Customer\",\n\t\t\t\"Auth_Code\": \"87654\",\n\t\t\t\"Transaction_type\": \"UPI\",\n\t\t\t\"UTR\": \"Yes\",\n\t\t\t\"Acc_No\": \"12345678\",\n\t\t\t\"PaymentType\": \"PayOut\"\n\t\t},\n\t\t{\n\t\t    \"id\":2,\n\t\t\t\"Date\": \"17/12/2024\",\n\t\t\t\"OrderId\": \"969FGBQ6\",\n\t\t\t\"Amount\": \"1000\",\n\t\t\t\"Customer_Name\": \"Customer\",\n\t\t\t\"Auth_Code\": \"87654\",\n\t\t\t\"Transaction_type\": \"UPI\",\n\t\t\t\"UTR\": \"Yes\",\n\t\t\t\"Acc_No\": \"12345678\",\n\t\t\t\"PaymentType\": \"PayIn\"\n\t\t}\n]"
+    }
+  ],
   "callbacks": []
 }
